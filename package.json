@@ -1,15 +1,24 @@
 {
   "name": "jsonresume-theme-el-santo",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A simple yet elegant theme for JSON Resume",
   "author": "Numa Canedo",
   "repository": {
     "type": "git",
-    "url": "https://github.com/numacanedo/jsonresume-theme-el-santo"
+    "url": "git+https://github.com/numacanedo/jsonresume-theme-el-santo.git"
   },
   "license": "MIT",
   "dependencies": {
     "handlebars": "^4.7.7",
-    "help": "^3.0.2"
+    "help": "^3.0.2",
+    "jsonresume-theme-el-santo": "^0.0.3"
+  },
+  "bugs": {
+    "url": "https://github.com/numacanedo/jsonresume-theme-el-santo/issues"
+  },
+  "homepage": "https://github.com/numacanedo/jsonresume-theme-el-santo#readme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
