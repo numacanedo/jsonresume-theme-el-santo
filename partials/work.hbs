@@ -1,0 +1,36 @@
+{{#if resume.work.length}}
+    <div class="pagebreak"/>
+    <div class="sectionBlock">
+        <div class='sectionContent'>
+            <span class='sectionName'>WORK EXPERIENCE</span>
+            {{#each resume.work}}
+                <div class="jobBlock">
+                    {{#if name}}
+                        <div class='blockHeader'><span class='company'>{{name}}</span></div>
+                    {{/if}}
+                    <div class='blockHeader'>
+                        {{#if position}}<b>{{position}}</b>{{/if}}
+                        {{#if startDate}}
+                            <span class='date'>
+                                {{format startDate}} - {{#if endDate}}{{format endDate}}{{else}}Present{{/if}}
+                            </span>
+                        {{/if}}
+                    </div>
+
+                    {{#if summary}}<p class="summary" style="white-space: pre-line">{{add-dot summary}}</p>{{/if}}
+                    {{#if highlights.length}}
+                        <ul>
+                            {{#each highlights}}
+                                <li>{{add-dot .}}</li>
+                            {{/each}}
+                        </ul>
+                    {{/if}}
+                    {{#if technologies}}<p><b>Technologies: </b>{{add-dot technologies}}</p>{{/if}}
+                    {{#unless @last}}
+                        <div class='sectionLine'></div>
+                    {{/unless}}
+                </div>
+            {{/each}}
+        </div>
+    </div>
+{{/if}}

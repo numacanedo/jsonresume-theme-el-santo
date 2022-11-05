@@ -1,0 +1,19 @@
+{{#if resume.skills.length}}
+    <div class="sectionBlock">
+        <div class='sectionContent'>
+            <span class='sectionName'>TECHNICAL SKILLS</span>
+            <ul>
+                {{#each resume.skills}}
+                    <li>
+                        {{#if name}}<b>{{name}}:</b>{{/if}}
+                        {{#if keywords.length}}
+                            {{#each keywords}}
+                                {{.}}{{#if @last}}.{{else}}, {{/if}}
+                            {{/each}}
+                        {{/if}}
+                    </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+{{/if}}

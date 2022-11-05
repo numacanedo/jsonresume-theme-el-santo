@@ -1,0 +1,19 @@
+{{#if resume.work.length}}
+    <div class="sectionBlock">
+        <div class='sectionContent'>
+            <span class='sectionName'>EDUCATION</span>
+            {{#each resume.education}}
+                <div class='blockHeader'>
+                    {{#if studyType}}<b>{{studyType}}{{#if area}} - {{area}}{{/if}}</b>{{/if}}
+                    {{#if startDate}}
+                        <span class='date'>
+                            {{format startDate}} - {{#if endDate}}{{format endDate}}{{else}}Present{{/if}}
+                        </span>
+                    {{/if}}
+                </div>
+                {{#if institution}}{{institution}}{{/if}}
+            {{/each}}
+        </div>
+    </div>
+{{/if}}
+

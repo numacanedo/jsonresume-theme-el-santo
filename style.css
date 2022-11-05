@@ -1,0 +1,140 @@
+body {
+    background: #EEEEEE;
+    font: 12px "Arial", Arial, sans-serif;
+    line-height: 1.4;
+    margin: 40px 0;
+}
+
+
+ul {
+    margin-bottom: 0;
+}
+
+li {
+    margin-bottom: 2px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.summary {
+    text-indent: 40px;
+}
+
+#resume {
+    margin: 0 auto;
+    min-width: 600px;
+    max-width: 600px;
+    padding: 80px 70px;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 4px #aaa;
+    -webkit-box-shadow: 2px 2px 4px #aaa;
+    overflow-x: scroll;
+}
+
+.basics {
+    font-size: 20px;
+}
+
+.basics .name {
+    float: left;
+    text-align: left;
+    font-weight: bolder;
+}
+
+.basics .label {
+    float: right;
+    text-align: right;
+    font-weight: lighter;
+}
+
+.sectionBlock {
+    display: flex;
+    width: 100%;
+}
+
+.sectionName {
+    width: 16%;
+    vertical-align: top;
+    display: inline-block;
+    background: gray;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+.blockHeader {
+    width: 100%;
+    vertical-align: bottom;
+    display: inline-block;
+}
+
+.sectionContent ul {
+    padding-left: 20px;
+    margin-top: 6px;
+    list-style-type: disc;
+}
+
+.sectionContent .sectionName {
+    width: 100%;
+    vertical-align: center;
+    background-color: lightgray;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.sectionContent .company {
+    font-size: large;
+    font-weight: bold;
+}
+
+.sectionContent .date {
+    float: right;
+}
+
+.sectionContent .separator {
+    height: 14px;
+}
+
+.sectionLine {
+    border-style: dashed;
+    border-width: 1px;
+    border-color: #CFCFCF;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sectionBlock {
+    margin-bottom: 4px;
+}
+
+.jobBlock {
+    page-break-inside: avoid;
+}
+
+
+@media print {
+    body {
+        -webkit-print-color-adjust: exact;
+    }
+
+    #resume {
+        padding: 0 0;
+        border: 0;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+}
+
+@page {
+    size: letter;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

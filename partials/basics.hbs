@@ -1,0 +1,12 @@
+{{#if resume.basics.summary}}
+    <div class='basics'>
+        <span class='name'>{{resume.basics.name}}</span>
+        {{#if resume.basics.label}}<span class='label'>{{resume.basics.label}}</span>{{/if}}
+    </div>
+    <div class="sectionBlock">
+        <div class='sectionContent'>
+            <span class='sectionName'>PROFESSIONAL SUMMARY</span>
+            <span style="white-space: pre-line">{{resume.basics.summary}}</span>
+        </div>
+    </div>
+{{/if}}
