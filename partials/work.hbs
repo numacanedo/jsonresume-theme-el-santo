@@ -5,16 +5,17 @@
             <span class='sectionName'>WORK EXPERIENCE</span>
             {{#each resume.work}}
                 <div class="jobBlock">
-                    {{#if name}}
-                        <div class='blockHeader'><span class='company'>{{name}}</span></div>
-                    {{/if}}
+                    <div class='blockHeader'>
+                        {{#if name}}
+                            <span class='company'>{{name}}</span>
+                        {{/if}}
+                        {{#if location}}
+                            <span class='company'>- {{location}}</span>
+                        {{/if}}
+                    </div>
                     <div class='blockHeader'>
                         {{#if position}}<b>{{position}}</b>{{/if}}
-                        {{#if startDate}}
-                            <span class='date'>
-                                {{format startDate}} - {{#if endDate}}{{format endDate}}{{else}}Present{{/if}}
-                            </span>
-                        {{/if}}
+                        {{> dates }}
                     </div>
 
                     {{#if summary}}<p class="summary" style="white-space: pre-line">{{add-dot summary}}</p>{{/if}}

@@ -1,0 +1,8 @@
+{{#if startDate}}
+    <div class='date'>
+        {{#if endDate}}
+            {{{format startDate endDate}}}
+        {{else}} {{{format startDate "Present&nbsp;"}}}
+        {{/if}}
+    </div>
+{{/if}}

@@ -6,11 +6,7 @@
                 <div class='blockHeader'>
                     {{#if company}}<b>{{company}}</b>{{/if}}
                     {{#if position}} - {{position}}{{/if}}
-                    {{#if startDate}}
-                        <span class='date'>
-                            {{format startDate}} - {{#if endDate}}{{format endDate}}{{else}}Present{{/if}}
-                        </span>
-                    {{/if}}
+                    {{> dates }}{{> duration }}
                 </div>
             {{/each}}
         </div>

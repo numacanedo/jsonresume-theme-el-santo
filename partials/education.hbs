@@ -5,11 +5,7 @@
             {{#each resume.education}}
                 <div class='blockHeader'>
                     {{#if studyType}}<b>{{studyType}}{{#if area}} - {{area}}{{/if}}</b>{{/if}}
-                    {{#if startDate}}
-                        <span class='date'>
-                            {{format startDate}} - {{#if endDate}}{{format endDate}}{{else}}Present{{/if}}
-                        </span>
-                    {{/if}}
+                    {{> dates }}
                 </div>
                 {{#if institution}}{{institution}}{{/if}}
             {{/each}}

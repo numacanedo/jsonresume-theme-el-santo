@@ -95,8 +95,23 @@ p {
     font-weight: bold;
 }
 
+
+.sectionContent .experience {
+    float: right;
+    font-weight: lighter;
+    color: gray;
+}
+
 .sectionContent .date {
     float: right;
+    font-family: "PT Mono";
+}
+
+.sectionContent .duration {
+    float: right;
+    font-family: "PT Mono";
+    font-weight: lighter;
+    color: gray;
 }
 
 .sectionContent .separator {
@@ -130,6 +145,10 @@ p {
         border: 0;
         box-shadow: none;
         -webkit-box-shadow: none;
+    }
+
+    .pagebreak {
+        page-break-before: always;
     }
 }
 
