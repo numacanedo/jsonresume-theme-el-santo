@@ -145,6 +145,8 @@ p {
         border: 0;
         box-shadow: none;
         -webkit-box-shadow: none;
+        max-height: 100%;
+        overflow-x: visible;
     }
 
     .pagebreak {

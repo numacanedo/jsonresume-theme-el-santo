@@ -33,7 +33,7 @@ function render(resume) {
         return ''
             .concat(pad(duration.years, 'y'))
             .concat(pad(duration.months, 'm'))
-            .concat(' ')
+            .concat('|')
             .replaceAll(' ', '&nbsp;');
     });
 
